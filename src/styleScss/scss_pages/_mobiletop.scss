@@ -1,0 +1,165 @@
+.mobiles-top{
+    margin-top: 100px;
+    width: 100%;
+    user-select: none;
+    position: relative;
+    height: 450px;
+    cursor: pointer;
+    h1{
+        text-align: center;
+        margin: 30px auto;
+    }
+    ul{
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        position: relative;
+        li{
+            transition: all 1s;
+            list-style-type: none;
+            position: absolute;
+            top: 0;
+            img{
+                
+                    width: 1200px;
+                    height: 350px;
+            
+            }
+            
+       }
+    }
+    & > i{
+        position: absolute;
+        top: 250px;
+        color: var(--simple_color);
+        z-index: 99;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: var(--secondary_color);
+        line-height: 80px;
+        text-align: center;
+        // user-select: none;
+        border: 2px solid rgba(255, 255, 255, 0.518);
+        opacity: 0.4;
+       }
+       .left{
+           left: 50px;
+           
+       }
+       .right{
+           right: 50px;
+       }
+       i:hover{
+        opacity: 0.6;
+       }
+       i:active{
+        opacity: 0.8;
+       }
+&--div{
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100px;
+        @include flex(space-around,center);
+        width:100%;
+        font-size: var(--font_small);
+        color: var(--simple_color);
+        
+        .mobilename{
+            color: var(--simple_color);
+            text-decoration: none;
+            font-size: var(--font_medium);  
+       
+        }
+        .storelogo{
+            
+            font-size: 40px;
+            
+        }
+        .storelogo:hover{
+            color:var(--secondary_color_hover)
+        }
+        .storelogo:active{
+            color: var(--secondary_color_active);
+        }
+        &>div *{
+            display: block;
+           padding: 5px 0;
+            
+        }
+        &>div i{
+                text-decoration: line-through rgb(255, 255, 255) solid ;
+                color: rgba(255, 255, 255, 0.568);
+                
+                
+            }
+        & > p{
+            background-color: red;
+            border-radius: 40px;
+            padding: 2px 8px;
+            font-size: 20px;
+        }
+}
+&--info{
+    cursor: context-menu;
+    background-color: red;
+    position: absolute;
+    top: -150px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 600px;
+    z-index: 9999;
+    background-color: var(--simple_color);
+    opacity: 0.9;
+    color: var(--secondary_color);
+    &__close{
+        font-size: 40px;
+        cursor: pointer;
+        color: red;
+    }
+   &__header{
+    @include flex(space-around,center);
+    height:300px;
+   &__img{
+        max-width: 200px;
+        max-height: 200px;
+       
+    }
+    h1{
+        font-size: 50px;
+    }
+       
+    }
+   .infos{
+    
+    width: 100%;
+    @include flex(space-around,center);
+    &--store{
+        
+        span{
+            font-size: 60px;
+            padding: 0 30px;
+        }
+        .storelogo{
+            cursor: pointer;
+            font-size: 80px;
+            color: var(--secondary_color);
+        }
+        .storelogo:hover{
+           color: var(--secondary_color_hover);
+        }
+        .storelogo:active{
+            color: var(--secondary_color_active);
+        }
+        
+    }
+        
+        
+    }
+    p{
+        color: var(--secondary_color);
+        font-size: var(--font_medium);
+        padding: 10px 0;
+    }
+}
+}

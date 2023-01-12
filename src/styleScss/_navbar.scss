@@ -1,0 +1,96 @@
+
+
+.navbar{   
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 599;
+    & ul{
+        width: 100%;
+        
+        background-color: var(--secondary_color);
+        line-height: 50px;
+        @include flex(center)
+    
+    }
+    & li{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: var(--primary_color);
+            margin: 2vw;
+            font-size: var(--font_medium);
+            font-weight: bolder;
+            &:hover{
+                color: var(--simple_color);
+            }
+            &:active{
+                color: var(--primary_color);
+            }
+        }
+        
+       
+    }
+    
+} 
+
+.dropdown-content {
+    overflow: hidden;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 25px;
+    background-color: var(--secondary_color);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    width: max-content;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 0.5s;
+    transform: scaleY(0);
+    transform-origin: top;
+ a {
+    
+    opacity: 0;
+    text-decoration: none;
+    display: block;
+    p{
+      color: var(--simple_color);
+      opacity: 0.5;
+    }
+  }
+  }
+  
+
+  
+.dropdown-content a:hover {
+   
+    color: var(--secondary_color);
+}
+  
+.dropdown:hover .dropdown-content{
+    transform: scaleY(1); 
+  }
+.dropdown:hover a{
+    opacity: 1;   
+  }
+
+
+#color{
+    height: 100%;
+ background-color: var(--primary_color);
+ border: none;
+  width: 160px;
+  position: relative;
+   
+  &::before{
+    content: "choose a page color";
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    top: 32%;
+    left: 10%;
+  }
+    
+}

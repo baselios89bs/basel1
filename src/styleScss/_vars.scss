@@ -1,0 +1,62 @@
+:root{
+    // --primary_color:#100F0F;
+    // --secondary_color:#0F3D3E;
+    // --simple_color:#F1F1F1;
+    // --secondary_color_hover:#165b5c;
+    // --secondary_color_active:#2ea3a5;
+    --primary_color:#2D033B;
+    --secondary_color: #810CA8;
+    --simple_color:#E5B8F4;
+    --secondary_color_hover:#810ca8c7;
+    --secondary_color_active:#810ca8e1;
+
+
+
+    --background_color:#E2DCC8;
+    --primary_color_font: rgba(255, 255, 255, 0.664);
+    --background_color_font:rgba(0, 0, 0, 0.582);
+    --font_small:20px;
+    --font_medium:32px;
+    --font_larg:40px;
+    --font_vlarg:60px;
+    
+}
+
+@mixin flex($justify:unset,$align:unset){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align ;
+
+}
+
+@mixin circle($width:40,$height:40){
+    width: ($width + px);
+    height: ($height + px);
+    border-radius: 50%;
+}
+
+@mixin backgroundImag($color1,$color2,$url,$repeat:no-repeat,$position:center,$size:cover){
+    background-image:linear-gradient($color1,$color2), url($url);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+        
+}
+@mixin btn(){
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--secondary_color);
+    &:hover{
+        background-color: var(--secondary_color_hover);
+        color: var(--simple_color); 
+    } 
+    &:active{
+        background-color: var(--secondary_color_active); 
+    } 
+}
+
+@keyframes open{
+    0%{height: 0;}
+    100%{height: max-content;}
+}
+

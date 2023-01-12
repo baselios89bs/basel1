@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/baselios89bs/basel.git/static/css/main.c755c247.css",
+    "main.js": "/baselios89bs/basel.git/static/js/main.67a4004b.js",
+    "index.html": "/baselios89bs/basel.git/index.html",
+    "main.c755c247.css.map": "/baselios89bs/basel.git/static/css/main.c755c247.css.map",
+    "main.67a4004b.js.map": "/baselios89bs/basel.git/static/js/main.67a4004b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c755c247.css",
+    "static/js/main.67a4004b.js"
+  ]
+}
